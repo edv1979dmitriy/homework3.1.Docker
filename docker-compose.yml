@@ -1,0 +1,12 @@
+services:
+  PostgreSQL:
+    image: postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data:/var/lib/postgres
+    environment:
+      - POSTGRES_RANDOM_ROOT_PASSWORD=yes
+      - POSTGRES_DB=db
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=9mREsvXDs9Gk89Ef
